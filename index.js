@@ -222,11 +222,11 @@ async function syncTasks(studentInfo, tasks) {
     console.log(saveMessage);
 
     const loadedTasks = await loadUserTasks(studentInfo.id);
-    console.log("✅ Loaded tasks:", loadedTasks);
+    console.log("Loaded tasks:", loadedTasks);
 
     return { saveMessage, loadedTasks };
   } catch (error) {
-    console.error("❌ Sync failed:", error.message);
+    console.error("Sync failed:", error.message);
   }
 }
 
